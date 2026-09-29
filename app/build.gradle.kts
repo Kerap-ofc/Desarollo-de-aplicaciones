@@ -10,8 +10,8 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.miproyectoalexmartinez"
-        minSdk = 33
+        applicationId = "com.example.miprimerproyectoalexmartinez"
+        minSdk = 35
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.constraint.layout)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

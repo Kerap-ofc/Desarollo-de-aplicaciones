@@ -12,11 +12,9 @@ import androidx.compose.ui.zIndex
 import androidx.constraintlayout.compose.ConstraintLayout
 
 @Composable
-fun constraintLayout(modifier: Modifier = Modifier) {
+fun MyConstraintLayout(modifier: Modifier = Modifier) {
     ConstraintLayout(modifier = modifier.fillMaxSize()) {
         val (boxRed, boxGray, boxGreen, boxMagenta, boxYellow, boxCyan, boxDarkGray, boxBlack, boxBlue) = createRefs()
-        val noGray = Color(0xff1f2124)
-
         Box(Modifier.size(75.dp).background(Color.Red).constrainAs(boxRed) {
             top.linkTo(boxYellow.bottom)
             start.linkTo(boxYellow.end)

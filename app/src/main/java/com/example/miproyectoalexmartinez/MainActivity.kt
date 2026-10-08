@@ -9,7 +9,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
-import com.example.miproyectoalexmartinez.components.layouts.MyFLowRowColumn
+import com.example.miproyectoalexmartinez.components.layouts.MyCruzcent
+import com.example.miproyectoalexmartinez.components.layouts.Myguidelines
+import com.example.miproyectoalexmartinez.components.layouts.ConstraintChain
+import com.example.miproyectoalexmartinez.components.layouts.ConstraintBarrier
 import com.example.miproyectoalexmartinez.ui.theme.MiproyectoAlexMartinezTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyFLowRowColumn(Modifier.padding(innerPadding))
+                  ConstraintBarrier(Modifier.padding(innerPadding))
                 }
             }
         }

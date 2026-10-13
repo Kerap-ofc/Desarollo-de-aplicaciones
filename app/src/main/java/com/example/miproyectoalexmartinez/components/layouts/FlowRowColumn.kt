@@ -1,7 +1,5 @@
 package com.example.miproyectoalexmartinez.components.layouts
 
-
-import android.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -9,7 +7,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowColumn
 import androidx.compose.foundation.layout.FlowRow
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -27,7 +24,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.w3c.dom.Text
 
 val colorProgramacion = Color(0xFFFF7D6D)
 val colorProgramacion2 = Color(0xFFFFC184)
@@ -48,7 +44,7 @@ fun MyFLowRowColumn(modifier: Modifier = Modifier){
     val scrollStateVertical = rememberScrollState()
 
     Box(modifier = modifier.fillMaxSize().horizontalScroll(scrollStateHorizontal).verticalScroll(scrollStateVertical)){
-    FlowRow(maxItemsInEachRow = 6, modifier = Modifier.height(1200.dp).width(800.dp)) {
+    FlowRow(maxItemsInEachRow = 6, modifier = Modifier.height(1200.dp).width(1200.dp)) {
         FlowColumn(maxItemsInEachColumn = 9, modifier = Modifier.weight(0.8f)) {
             Column (modifier = Modifier.fillMaxWidth().background(color = Color.White).weight(0.5f), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center){
                 Text("")

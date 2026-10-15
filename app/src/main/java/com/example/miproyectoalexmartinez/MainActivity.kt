@@ -8,8 +8,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.example.miproyectoalexmartinez.components.layouts.MiButton
+import com.example.miproyectoalexmartinez.components.layouts.MiTextFieldPadre
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
 import com.example.miproyectoalexmartinez.components.layouts.MyFLowRowColumn
+import com.example.miproyectoalexmartinez.components.layouts.MyPasswordTextField
 import com.example.miproyectoalexmartinez.ui.theme.MiproyectoAlexMartinezTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyFLowRowColumn(Modifier.padding(innerPadding))
+                    MiButton(Modifier.padding(innerPadding))
                 }
             }
         }

@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("net.objecthunter:exp4j:0.4.8")
     implementation(libs.constraint.layout)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)

@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.example.miproyectoalexmartinez.components.layouts.Calculadora
 import com.example.miproyectoalexmartinez.components.layouts.MiButton
 import com.example.miproyectoalexmartinez.components.layouts.MiTextFieldPadre
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MiButton(Modifier.padding(innerPadding))
+                    Calculadora(Modifier.padding(innerPadding))
                 }
             }
         }

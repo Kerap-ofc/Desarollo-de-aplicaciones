@@ -11,8 +11,11 @@ kotlin = "2.4.20"
 composeBom = "2026.09.00"
 constraintVersion = "1.1.2"
 constraintlayoutVersion = "2.2.2"
+coilCompose = "3.3.0"
 
 [libraries]
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref ="coilCompose"}
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilCompose" }
 constraint-layout = { group = "androidx.constraintlayout", name ="constraintlayout-compose", version.ref = "constraintVersion" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayoutVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

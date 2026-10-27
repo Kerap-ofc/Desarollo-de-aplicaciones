@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -33,12 +32,14 @@ import net.objecthunter.exp4j.ExpressionBuilder
 @Composable
 fun Calculadora(modifier: Modifier = Modifier) {
     var expresion by remember { mutableStateOf("") }
-    var resultado by remember { mutableStateOf("") }
+
+    //Rellena la pantalla de negro
     Box(
         Modifier
             .fillMaxSize()
             .background(Color(0xFF101010))
     ) {
+        //Crea lo que seran las columnas de la calculadora
         Column(
             modifier
                 .fillMaxSize()
@@ -46,7 +47,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(8.dp, alignment = Alignment.Bottom)
         ) {
-
+        //Aqui en donde ira el resultado de lo operacion
             Row(
                 Modifier.fillMaxWidth()
             ) {
@@ -66,7 +67,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
             ) {
                 Button(
                     onClick = { expresion = ""
-                                resultado = ""},
+                                },
                     modifier = Modifier.weight(1f).aspectRatio(1f),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color(0xFFC0C0C0),
@@ -106,7 +107,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
                         fontWeight = FontWeight.Bold,
                         textAlign = TextAlign.Center)
                 }
-
+//Sacar el porcentgje  del numero introfucido
                 Button(
                     onClick = {if (expresion.isNotEmpty()){
                         val numero = expresion.toDouble()
@@ -127,7 +128,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
                         fontWeight = FontWeight.Bold,
                         textAlign = TextAlign.Center)
                 }
-
+//Dibidir
                 Button(
                     onClick = {expresion += "/"},
                     modifier = Modifier.weight(1f).aspectRatio(1f),
@@ -310,7 +311,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color(0xFF343434),
                         contentColor = Color.White
-                    ),
+                    ),//lo usamos para que el boton se redondead
                     shape = CircleShape
                 ) { Text(
                     modifier = Modifier.fillMaxWidth(),
@@ -360,7 +361,7 @@ fun Calculadora(modifier: Modifier = Modifier) {
             ) {
                 Button(
                     onClick = {expresion += 0},
-                    modifier = Modifier.weight(2f).height(85.dp),
+                    modifier = Modifier.weight(2f).aspectRatio(2f),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color(0xFF343434),
                         contentColor = Color.White

@@ -10,11 +10,13 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.miproyectoalexmartinez.components.layouts.Calculadora
 import com.example.miproyectoalexmartinez.components.layouts.MiButton
+import com.example.miproyectoalexmartinez.components.layouts.MiImagen
 import com.example.miproyectoalexmartinez.components.layouts.MiTextFieldPadre
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
 import com.example.miproyectoalexmartinez.components.layouts.MyFLowRowColumn
 import com.example.miproyectoalexmartinez.components.layouts.MyPasswordTextField
 import com.example.miproyectoalexmartinez.ui.theme.MiproyectoAlexMartinezTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Calculadora(Modifier.padding(innerPadding))
+                    MiImagen(Modifier.padding(innerPadding))
                 }
             }
         }

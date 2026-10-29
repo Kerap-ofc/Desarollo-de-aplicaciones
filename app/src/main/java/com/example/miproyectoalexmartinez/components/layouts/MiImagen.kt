@@ -52,7 +52,7 @@ fun MiImagen(modifier: Modifier = Modifier) {
                     contentScale = ContentScale.Crop
 
                 ) }
-            Row(modifier.fillMaxWidth(), horizontalArrangement = o) {
+            Row(modifier.fillMaxWidth()) {
                 AsyncImage(
                         model = "https://media1.tenor.com/m/LWYkOoCnsJkAAAAd/son-son-meme.gif",
                         contentDescription = "Imagen de Jetpack Compose",

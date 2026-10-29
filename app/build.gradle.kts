@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("com.airbnb.android:lottie-compose:6.6.6")
     implementation("net.objecthunter:exp4j:0.4.8")
     implementation(libs.constraint.layout)
     implementation(platform(libs.androidx.compose.bom))

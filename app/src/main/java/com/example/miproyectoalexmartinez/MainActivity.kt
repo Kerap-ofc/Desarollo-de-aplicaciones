@@ -15,6 +15,7 @@ import com.example.miproyectoalexmartinez.components.layouts.MiTextFieldPadre
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
 import com.example.miproyectoalexmartinez.components.layouts.MyFLowRowColumn
 import com.example.miproyectoalexmartinez.components.layouts.MyPasswordTextField
+import com.example.miproyectoalexmartinez.components.layouts.Progressobar
 import com.example.miproyectoalexmartinez.ui.theme.MiproyectoAlexMartinezTheme
 
 
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MiImagen(Modifier.padding(innerPadding))
+                    Progressobar(Modifier.padding(innerPadding))
                 }
             }
         }

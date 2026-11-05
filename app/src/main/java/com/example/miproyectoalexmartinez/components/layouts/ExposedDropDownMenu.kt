@@ -36,7 +36,7 @@ fun MiExposedDropDownMenu(modifier: Modifier = Modifier) {
         )
         DropdownMenu(
             expanded = expandido, onDismissRequest = { expandido = false }) {
-            sDropdownMenuItem(text = { Text("Bases de datos") }, onClick = {
+            DropdownMenuItem(text = { Text("Bases de datos") }, onClick = {
                 seleccionado = "Bases de datos"
                 expandido = false
             })

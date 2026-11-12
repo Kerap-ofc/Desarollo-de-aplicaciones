@@ -24,6 +24,7 @@ import com.example.miproyectoalexmartinez.components.layouts.MiTextFieldPadre
 import com.example.miproyectoalexmartinez.components.layouts.MyConstraintLayout
 import com.example.miproyectoalexmartinez.components.layouts.MyFLowRowColumn
 import com.example.miproyectoalexmartinez.components.layouts.MyPasswordTextField
+import com.example.miproyectoalexmartinez.components.layouts.Mypadre
 import com.example.miproyectoalexmartinez.components.layouts.PadreCheckBoxes
 import com.example.miproyectoalexmartinez.components.layouts.Progressobar
 import com.example.miproyectoalexmartinez.components.layouts.TercerEstadoCheckBox
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MiExposedDropDownMenu(Modifier.padding(innerPadding))
+                    Mypadre(Modifier.padding(innerPadding))
                 }
             }
         }

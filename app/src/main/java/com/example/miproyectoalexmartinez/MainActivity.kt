@@ -15,8 +15,6 @@ import com.example.miproyectoalexmartinez.components.layouts.MiButton
 import com.example.miproyectoalexmartinez.components.layouts.MiDropDownMenu
 import com.example.miproyectoalexmartinez.components.layouts.MiExposedDropDownMenu
 import com.example.miproyectoalexmartinez.components.layouts.MiImagen
-import com.example.miproyectoalexmartinez.components.layouts.MiListaRadioButton
-import com.example.miproyectoalexmartinez.components.layouts.MiRangeSlider
 import com.example.miproyectoalexmartinez.components.layouts.MiSlider
 import com.example.miproyectoalexmartinez.components.layouts.MiSliderAvanzado
 import com.example.miproyectoalexmartinez.components.layouts.MiSwitch

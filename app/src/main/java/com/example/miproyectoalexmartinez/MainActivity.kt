@@ -11,6 +11,7 @@ import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.ui.Modifier
 import com.example.miproyectoalexmartinez.components.layouts.Calculadora
 import com.example.miproyectoalexmartinez.components.layouts.CheckBoxConText
+import com.example.miproyectoalexmartinez.components.layouts.Me
 import com.example.miproyectoalexmartinez.components.layouts.MiButton
 import com.example.miproyectoalexmartinez.components.layouts.MiDropDownMenu
 import com.example.miproyectoalexmartinez.components.layouts.MiExposedDropDownMenu
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MiproyectoAlexMartinezTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Mypadre(Modifier.padding(innerPadding))
+                    Me(Modifier.padding(innerPadding))
                 }
             }
         }
